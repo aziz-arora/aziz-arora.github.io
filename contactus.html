@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://st4.depositphotos.com/2903611/29109/i/450/depositphotos_291092974-stock-photo-man-touching-social-network-icons.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #333;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container .form {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .form-container .form input,
+        .form-container .form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #6c757d;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .form-container .form button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-info {
+            margin-top: 20px;
+            background-color: #007bff;
+            padding: 20px;
+            border-radius: 8px;
+	    color: #ffffff;
+        }
+        .contact-info h3 {
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: #fff;
+            margin-top: 40px;
+            border-radius: 0 0 8px 8px;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="form-container">
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="city">City:</label>
+    <input list="cities" id="city" name="city" required>
+    <datalist id="cities">
+      <option value="Toronto">
+      <option value="Vancouver">
+
+    </datalist>
+
+		    <label for="postalCode">Postal Code:</label>
+    	  <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d|[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d" required>
+<label for="reason">Reason:</label>
+<input type="radio" name="reason" value="Question" required><label for="reason">Question</label>
+<input type="radio" name="reason" value="Comment" required><label for="reason">Comment</label>
+<input type="radio" name="reason" value="Hiring" required><label for="reason">Hiring</label>
+
+
+
+    <label for="message"><left>Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <label for="additionalInfo">Additional Info:</label>
+    <input type="text" id="additionalInfo" name="additionalInfo">
+
+    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><u><b>Email:</b></u> aziz@myseneca.ca</p>
+                <p><u><b>Student ID:</b></u> 138943220</p>
+                <p><u><b>Phone:</b></u> +437-799-6782</p>
+                <p><u><b>Address:</b></u> 38 XYZ Drive, Scarborough, Ontario</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p><b>&copy; AZIZ Business Founder, 2023. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
